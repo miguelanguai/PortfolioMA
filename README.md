@@ -1,6 +1,8 @@
 # Mi Portfolio
+
 I want to make a one-page portfolio that contains the next items (in this
 order):
+
 - My work: This section will explain what I'm doing right now, what are the
   tools I use and the programming languages I know.
 - About: This section will talk about me as a person, and my way until the
