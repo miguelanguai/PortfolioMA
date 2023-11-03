@@ -10,7 +10,6 @@
 
 <body>
     <div id="header">
-        <!--Here header will be-->
         <div id="personal-logo">
             <img src="assets/img/logoMA.png" alt="mi logo personal">
         </div>
@@ -23,19 +22,16 @@
         </div>
     </div>
     <div id="nav">
-        <!--Here a nav that will be always displayed When pressed, a contact div
-            and a mailto link will be displayed. 
-
+        <!--
+            Puede ser que fuera conveniente poner el boton de abrir chat en nav,
+            puesto que irá fijo en la pantalla, y no dentro de ningún otro
+            contenedor. 
         -->
     </div>
     <div id="main">
         <div id="leftPart" class="side"></div>
         <div id="mainPart">
 
-            <!--
-            here the main sections in the body. All the ones in the header, but
-            developed It's all in one page
-        -->
             <h1>Work In Progress</h1>
             <h1>Miguel Ángel Guaita</h1>
             <h2>Junior Programmer</h2>
@@ -191,7 +187,6 @@
             </div>
 
             <div id="About">
-                <!--Every div has an image. -->
                 <!--When hover with CSS, explanation of every stage or hobbie-->
                 <h1>About</h1>
                 <h2>My timeline</h2>
@@ -246,7 +241,7 @@
                 </p>
 
                 <div class="divisionLine">
-                    <hr> <!--When adding CSS, change this hr?-->
+                    <hr> 
                 </div>
 
                 <!--Here the two projects I have done. If I put them, I must
@@ -275,8 +270,7 @@
                     first course of programming. It consists of a parchis game
                     that can be played online by two players.
                     </p>
-                    <a href="" class="projectLink"> <!--it lacks the image
-                    source of parchis. Get it and put it here-->
+                    <a href="" class="projectLink"> 
                         <img src="assets/img/javachis.png" alt="this is the
                         image of parchis java project">
                     </a>
@@ -285,17 +279,13 @@
             </div>
 
             <div id="Blog">
-                <!--Añadir en bruto por el momento-->
-                <!--Un h2 para los titulos de los post y un p para el cuerpo del
-                post-->
                 <h1>Blog</h1>
 
                 <div id="postsLinkedin">
                     <div class="post">
                         <img src="assets/img/firstPost.jpeg" alt="imagen que
                         muestra nuestro paso a la ronda final del evento
-                        hackathon NASA SpaceApps"
-                        class="postImg">
+                        hackathon NASA SpaceApps" class="postImg">
                         <p class="postText">
                             ¡Estamos en los mejores 580 del mundo de NASA Space
                             Apps 2023! Aún no podemos creer todo lo que está
@@ -308,8 +298,7 @@
                     <div class="post">
                         <img src="assets/img/secondPost.jpeg" alt="imagen que
                         muestra mi presencia en el evento Valencia Digital
-                        Summit"
-                        class="postImg">
+                        Summit" class="postImg">
                         <p class="postText">
                             Este jueves por la mañana estuve en el Valencia
                             Digital Summit, para poder ver qué novedades hay en
@@ -332,8 +321,7 @@
                     <div class="post">
                         <img src="assets/img/thirdPost.jpeg" alt="imagen que
                         muestra la victoria de mi equipo en el evento hackathon
-                        NASA SpaceApps local Valencia"
-                        class="postImg">
+                        NASA SpaceApps local Valencia" class="postImg">
                         <p class="postText">
                             ¡Estamos emocionados de compartir nuestra reciente
                             victoria en el SpaceApps Valencia! 😄🚀 Junto con
@@ -439,7 +427,8 @@
 
     <div id="aside">
         <!--
-            Here the AIchat opener button. This AIchat
+            Revisar esto con lo de arriba. Quizá venga mejor cambiar lo de
+            arriba y meterlo aquí y quitar la sección de Contacto
         -->
         <div id="chatOpener">
             <button>
@@ -464,14 +453,23 @@
         </div>
         <div id="socialIcons">
             <!--introducir cada a en un div-->
-            <a href="https://www.linkedin.com/in/miguelangelguaita/"><img
-            src="assets/img/linkedinIcon.webp" alt="enlace a LinkedIn"></a>
-            <a href="https://github.com/miguelanguai"><img
-            src="assets/img/githubIcon.png" alt="enlace a GitHub"></a>
-            <a href="https://www.instagram.com/miguelang_gv/"><img
-            src="assets/img/instagramIcon.webp" alt="enlace a Instagram"></a>
-            <a href="mailto:miguelanguai@gmail.com"><img
-            src="assets/img/mailToIcon.png" alt="mandame un correo"></a>
+            <div class="bottomIcon" id="linkedinLink">
+                <a href="https://www.linkedin.com/in/miguelangelguaita/"><img
+                src="assets/img/linkedinIcon.webp" alt="enlace a LinkedIn"></a>
+            </div>
+            <div class="bottomIcon" id="githubLink">
+                <a href="https://github.com/miguelanguai"><img
+                src="assets/img/githubIcon.png" alt="enlace a GitHub"></a>
+            </div>
+            <div class="bottomIcon" id="instagramLink">
+                <a href="https://www.instagram.com/miguelang_gv/"><img
+                src="assets/img/instagramIcon.webp" alt="enlace a
+                Instagram"></a>
+            </div>
+            <div class="bottomIcon" id="mailLink">
+                <a href="mailto:miguelanguai@gmail.com"><img
+                src="assets/img/mailToIcon.png" alt="mandame un correo"></a>
+            </div>
         </div>
     </div>
 
