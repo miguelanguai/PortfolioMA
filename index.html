@@ -21,13 +21,6 @@
             <div id="contact"><a href="#Contact">Contact</a></div>
         </div>
     </div>
-    <div id="nav">
-        <!--
-            Puede ser que fuera conveniente poner el boton de abrir chat en nav,
-            puesto que irá fijo en la pantalla, y no dentro de ningún otro
-            contenedor. 
-        -->
-    </div>
     <div id="main">
         <div id="leftPart" class="side"></div>
         <div id="mainPart">
@@ -52,50 +45,51 @@
 
             <!--Falta añadir las imagenes dentro de los contenedores
             presentationTopic y añadir h2 y p en otro contenedor-->
-
-            <div class="presentationTopic" id="whyProgramming">
-                <h2 class="presentationTopicTitle">Why Programming?</h2>
-                <p class="presentationTopicText">
-                    It all started when I was 16, in my last year of mandatory
-                    studies. There, I chose to study Informatics, and I started
-                    to learn about the office IT (PowerPoint, Word, Excel...).
-                    But, at the end of the course, teacher taught us some web
-                    development, and I started to feel curious about the
-                    subject.
-                </p>
+            <div id="presentationTexts">
+                <div class="presentationTopic" id="whyProgramming">
+                    <h2 class="presentationTopicTitle">Why Programming?</h2>
+                    <p class="presentationTopicText">
+                        It all started when I was 16, in my last year of mandatory
+                        studies. There, I chose to study Informatics, and I started
+                        to learn about the office IT (PowerPoint, Word, Excel...).
+                        But, at the end of the course, teacher taught us some web
+                        development, and I started to feel curious about the
+                        subject.
+                    </p>
+                </div>
+                <div class="presentationTopic" id="myFirstWeb">
+                    <h2 class="presentationTopicTitle">Why Programming?</h2>
+                    <p class="presentationTopicText">
+                        At this moment, I had very clear what I wanted to work in
+                        the future, and it wasn't a programmer. I still didn't know
+                        how I was going to like this career in the future... And I
+                        didn't even think about become a programmer.
+                    </p>
+                </div>
+                <div class="presentationTopic" id="stack">
+                    <h2 class="presentationTopicTitle">My Stack</h2>
+                    <p class="presentationTopicText">
+                        The programming languages I know are HTML, CSS, JavaScript,
+                        JAVA, PHP, Bash, MySQL and GIT. The frameworks I have seen
+                        are Laravel and Node. I also have studied AWS and Azure. I
+                        feel myself more confident as a backend developer, but I
+                        would like to develop my skills in order to become a
+                        full-stack developer, and that's what I'm looking to turn
+                        myself into. 
+                    </p>
+                </div>
+                <div class="presentationTopic" id="iDefineMyself">
+                    <h2 class="presentationTopicTitle">My Stack</h2>
+                    <p class="presentationTopicText">
+                        I would define myself as a person who likes to learn and
+                        uses a method on almost everything I want to get myself
+                        into. That's how I have learned dutch on a self-taught way
+                        with web apps. On the recent years, I have developed 
+                        <!--Ampliar-->
+                    </p>
+                </div>
             </div>
-            <div class="presentationTopic" id="myFirstWeb">
-                <h2 class="presentationTopicTitle">Why Programming?</h2>
-                <p class="presentationTopicText">
-                    At this moment, I had very clear what I wanted to work in
-                    the future, and it wasn't a programmer. I still didn't know
-                    how I was going to like this career in the future... And I
-                    didn't even think about become a programmer. Here you can
-                    see a picture of my very first web I developed. It was only
-                    some html pages (without css) with links between them.
-                </p>
-            </div>
-            <div class="presentationTopic" id="stack">
-                <h2 class="presentationTopicTitle">My Stack</h2>
-                <p class="presentationTopicText">
-                    The programming languages I know are HTML, CSS, JavaScript,
-                    JAVA, PHP, Bash, MySQL and GIT. The frameworks I have seen
-                    are Laravel and Node. I also have studied AWS and Azure. I
-                    feel myself more confident as a backend developer, but I
-                    would like to develop my skills in order to become a
-                    full-stack developer, and that's what I'm looking to turn
-                    myself into. 
-                </p>
-            </div>
-            <div class="presentationTopic" id="iDefineMyself">
-                <h2 class="presentationTopicTitle">My Stack</h2>
-                <p class="presentationTopicText">
-                    I would define myself as a person who likes to learn and
-                    uses a method on almost everything I want to get myself
-                    into. 
-                    <!--Ampliar-->
-                </p>
-            </div>
+            
 
             <div id="Works">
                 <h1>Works</h1>
@@ -286,87 +280,94 @@
 
             <div id="Contact">
                 <h1>Contact</h1>
-                <div id="chactOpener">
-                    <!--
-                        When pressed, the contact chat window is opened and the
-                        user is able to "chat" with the web to show options to
-                        contact with me
-                    -->
+                
+                <div id github class="contactDiv">
+                    <a href="https://github.com/miguelanguai"><img
+                    src="assets/img/githubIcon.png" alt="Go check my Github">
+                    </a>
                 </div>
-
-                <div id="chat">
-                    <!--
-                        here is the chat with the web class answerOptions
-                    -->
-
-                    <p class="webMessages">
-                        <!--first message webs deliver to user-->
-                        Hi! I'm Miguel. It's a pleasure to see you here. What
-                        can I do for you?
-                    </p>
-                    
-
-                    <!--hasta la 443, revisar en papel, para saber como hacerlo
-                         bien-->
-                    <div id="answerOptionsContainer">
-                        <!--the possible answers shown at the first message-->
-                        <div class="answerOptions" id="linkedinRequested">
-                            <p>I want to see your Linkedin</p>
-                        </div>
-                        <div class="answerOptions" id="emailRequested">
-                            <p>I want to send you an email</p>
-                        </div>
-                        <div class="answerOptions" id="cvRequested">
-                            <p>I want to see your CV </p>
-                        </div>
-                        <div class="answerOptions" id="projectsRequested">
-                            <p>I want to see the projects you did</p>
-                        </div>
-                    </div>
-
-                    <div class="answerLinkedin">
-                        <p>Sure! Here you have it</p>
-                        <p><a
-                        href="https://www.linkedin.com/in/miguelangelguaita/">My
-                        Linkedin</a></p>
-                    </div>
-                    <div class="webMessages" id="answerEmail">
-                        <p>Okay! Send me an email</p>
-                        <a href="mailto:miguelanguai@gmail.com">
-                            Send mail to Miguel Angel
-                        </a>
-                    </div>
-                    <div class="webMessages" id="answerCV">
-                        <p>Great! You can download my CV from this link: 
-                            <a href="assets/others/miguelAngelGuaitaCV.pdf"
-                            target="_blank">Download CV
-                            </a>
-                        </p>
-                    </div>
-                    <div class="webMessages" id="answerProjects">
-                        <p>Sure! Let's guide you to the projects I did in the
-                        past</p>
-                        <p>
-                            <a href="#Projects">My Projects</a>
-                        </p>
-                    </div>
-
+                <div id="linkedin" class="contactDiv">
+                    <h2>LinkedIn</h2>
+                    <a
+                    href="https://www.linkedin.com/in/miguelangelguaita/"><img
+                    src="assets/img/linkedinIcon.webp" alt="Go check
+                     my LinkedIn"></a>
                 </div>
+                <div id="gmail" class="contactDiv">
+                    <a href="mailto:miguelanguai@gmail.com"><img
+                    src="assets/img/mailToIcon.png" alt="Send me an email">
+                    </a>
+                </div>
+                
             </div>
         </div>
         <div id="rightPart" class="side"></div>
     </div>
 
-    <div id="aside">
-        <!--
-            Revisar esto con lo de arriba. Quizá venga mejor cambiar lo de
-            arriba y meterlo aquí y quitar la sección de Contacto
-        -->
+    <div id="nav">
         <div id="chatOpener">
             <button>
                 <img src="assets/img/chatOpenerIcon.png" alt="this is the AIChat
                 opener Icon">
             </button>
+        </div>
+        <div id="chat">
+            <!--
+                here is the chat with the web class answerOptions
+            -->
+
+            <p class="webMessages">
+                <!--first message webs deliver to user-->
+                Hi! I'm Miguel. It's a pleasure to see you here. What
+                can I do for you?
+            </p>
+            
+
+            <!--hasta la 443, revisar en papel, para saber como hacerlo
+                 bien-->
+            <div id="answerOptionsContainer">
+                <!--the possible answers shown at the first message-->
+                <div class="answerOptions" id="linkedinRequested">
+                    <p>I want to see your Linkedin</p>
+                </div>
+                <div class="answerOptions" id="emailRequested">
+                    <p>I want to send you an email</p>
+                </div>
+                <div class="answerOptions" id="cvRequested">
+                    <p>I want to see your CV </p>
+                </div>
+                <div class="answerOptions" id="projectsRequested">
+                    <p>I want to see the projects you did</p>
+                </div>
+            </div>
+
+            <div class="answerLinkedin">
+                <p>Sure! Here you have it</p>
+                <p><a
+                href="https://www.linkedin.com/in/miguelangelguaita/">My
+                Linkedin</a></p>
+            </div>
+            <div class="webMessages" id="answerEmail">
+                <p>Okay! Send me an email</p>
+                <a href="mailto:miguelanguai@gmail.com">
+                    Send mail to Miguel Angel
+                </a>
+            </div>
+            <div class="webMessages" id="answerCV">
+                <p>Great! You can download my CV from this link: 
+                    <a href="assets/others/miguelAngelGuaitaCV.pdf"
+                    target="_blank">Download CV
+                    </a>
+                </p>
+            </div>
+            <div class="webMessages" id="answerProjects">
+                <p>Sure! Let's guide you to the projects I did in the
+                past</p>
+                <p>
+                    <a href="#Projects">My Projects</a>
+                </p>
+            </div>
+
         </div>
     </div>
 
@@ -392,11 +393,6 @@
             <div class="bottomIcon" id="githubLink">
                 <a href="https://github.com/miguelanguai"><img
                 src="assets/img/githubIcon.png" alt="enlace a GitHub"></a>
-            </div>
-            <div class="bottomIcon" id="instagramLink">
-                <a href="https://www.instagram.com/miguelang_gv/"><img
-                src="assets/img/instagramIcon.webp" alt="enlace a
-                Instagram"></a>
             </div>
             <div class="bottomIcon" id="mailLink">
                 <a href="mailto:miguelanguai@gmail.com"><img
