@@ -24,4 +24,4 @@ order):
 This will be my portfolio (for now, the HTML)
 
 *The only thing about the false-AI is that, I will need to wait until I know JS
-to develop that code. Just with HTML it can't be done.
+to develop that code. Just with HTML it can't be done..
