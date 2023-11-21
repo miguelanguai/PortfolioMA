@@ -3,7 +3,7 @@
 I want to make a one-page portfolio that contains the next items (in this
 order):
 
-- Works: This section shows the job experiences I have had, the position I have 
+- Works: This section shows the job experiences I have had, the position I have
   been at and the programming languages I have used at that job
 - About: This section will talk about me as a person, and my way until the
   moment I'm right now as a programmer. My career before becoming a programmer
