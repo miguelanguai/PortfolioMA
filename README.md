@@ -48,3 +48,10 @@ is to apply CSS and JS to make them visual and functional. They are commented
 with "Future Feat:"
 
 License: Apache 2.0
+
+*Note: I wanted to apply "All rights reserved" in my portfolio, but as the
+project asks for a License, I haven't seen any license with "All rights
+reserved", and as I have read the thread "otro: Como atribuir correctamente
+código que no es mío" in outlook forum, I have to change "Copyright © 2023
+Miguel Ángel Guaita. All rights reserved." to "Copyright 2023 Miguel Ángel
+Guaita"
