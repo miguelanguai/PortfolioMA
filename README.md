@@ -3,25 +3,17 @@
 I want to make a one-page portfolio that contains the next items (in this
 order):
 
-- Works: This section shows the job experiences I have had, the position I have
-  been at and the programming languages I have used at that job
-- About: This section will talk about me as a person, and my way until the
-  moment I'm right now as a programmer. My career before becoming a programmer
-  and my career from the moment I became a programmer
-- Projects: This section will show which projects I have been working on. As I'm
-  still a student, I will show the projects I have done as a student, because,
-  for now, I just have those ones.
-- Blog: This section will show interesting things I want to share with the
-  people is going to take a look at my Portfolio. I'm thinking on bringing my
-  LinkedIn's profile publications here, although I'm not sure about how doing
-  it.
-- Contact: This section will be meant for the ways of contacting with me. But it
-  won't be a typical contact window with the links to my social media (this
-  will be at the footer too). It will be a false-AI that will show some options
-  of message for the user, and, depending on the choice, it will show different
-  social media.*
+- Header: Here, there is my personal logo and some links for the same page.
+- Main: Here, a Work in Progress is firstly displayed to let know the person who is taking a look of the portfolio that I'm still on my portfolio. Then, my name and my position. After, a little description.
+  - Works: This section shows the job experiences I have had, the position I have   been at and the programming languages I have used at that job. As, for now, I don't have any real experiences, I must say at first I'm still a student, but I will write some models where I'll apply my work experiences in the future. On this model, I have the job title (which will be the position I will be at) and the Languages I will use at that position.
+  - About: This section will talk about me as a person, and my way until becoming a programmer. Here, I want to point out that I see my portfolio as a kind of story-teller, more than just being a simple "interactive CV". I also explain what are my hobbies, in order to let the viewer know more about me.
+  - Projects: This section will show which projects I have been working on. As I'm   still a student, I will show the projects I have done as a student, because, for now, I just have those ones. First one is the project I did with my team in the hackathon we participated early this year, and the final project I did with a classmate last year in programming module. On every project, I explain how they work and which technologies they use.
+  - Stack: This section shows the Stack I have for now. My idea is to create a carousel in order to make it more eye-catching.
+  - Blog: This section will show my Linkedin profile posts (the three most recent). For now, they are directly written on HTML file, but I want to use (if exists) an API to take these posts automatically from my Linkedin profile everytime my portfolio is opened.
+  - Contact: This contact section will provide the user 3 links to my main professional social media profiles: GitHub, LinkedIn and a link to send me an email.
+  - Chat: This section, although is operative now, it's not "cool" for the moment. This will be a "fake" chat, created to make user able to "talk" with an interactive window that will bring him/her the information he/she wants. But, in order to make it work correctly, I will need to apply CSS and JS. So, it's there, although is not useful for now.
+- Footer: Here, social media icons are again displayed here and also there is a text about the Copyright.
 
 This will be my portfolio (for now, the HTML)
 
-*The only thing about the false-AI is that, I will need to wait until I know JS
-to develop that code. Just with HTML it can't be done..
+*Note: Some featurings I want to add are added in HTML only, but the intention is to apply CSS and JS to make them visual and functional. They are commented with "Future Feat:"
