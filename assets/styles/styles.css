@@ -22,11 +22,15 @@ body {
 header {
     position: fixed;
     top: 0;
-    background-color: rgb(136, 0, 0);
+    background-color: white;
     padding: 20px;
     width: 100%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     & ul {
+        background-color: rgb(136, 0, 0);
+        padding: 10px 0 10px 0;
         display: flex;
         justify-content: space-around;
         gap: 25px;
@@ -45,6 +49,9 @@ header {
             }
         }
     }
+    & img{
+        border-radius: 50px;
+    }
 }
 header:first-child{
 
@@ -54,5 +61,5 @@ header:first-child{
 main {
     margin: 0 auto;
     max-width: 50em;
-    margin-top: 280px;
+    margin-top: 140px;
 }
