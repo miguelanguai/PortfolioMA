@@ -28,6 +28,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     & ul {
         background-color: rgb(136, 0, 0);
         padding: 10px 0 10px 0;
@@ -35,6 +36,7 @@ header {
         justify-content: space-around;
         gap: 25px;
         width: 75%;
+
         & li {
             display: inline;
             list-style: none;
@@ -43,18 +45,38 @@ header {
                 color: white;
                 text-decoration: none;
             }
-            & a:hover{
+
+            & a:hover {
                 text-decoration: underline;
                 cursor: pointer;
             }
         }
     }
-    & img{
+
+    & img {
         border-radius: 50px;
     }
 }
-header:first-child{
 
+header:first-child {}
+
+footer {
+    color: white;
+    background-color: rgb(136, 0, 0);
+
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    margin: 0 auto;
+    width: 100%;
+    & div {
+        grid-column: 17 / 21;
+    }
+
+    & section {
+        grid-column-start:5 ;
+        grid-column-end:15 ;
+        margin: 0 auto;
+    }
 }
 
 
