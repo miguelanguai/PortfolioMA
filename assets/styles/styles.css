@@ -68,15 +68,40 @@ footer {
     grid-template-columns: repeat(25, 1fr);
     margin: 0 auto;
     width: 100%;
+
     & div {
-        grid-column: 17 / 21;
+        grid-column: 17 / 23;
     }
 
     & section {
-        grid-column-start:5 ;
-        grid-column-end:15 ;
+        grid-column: 5 / 15;
         margin: 0 auto;
     }
+
+    & ul {
+        list-style: none;
+        padding-left: 0;
+
+        & li {
+            line-height: 2.5;
+            & a {
+                align-items: center;
+                text-decoration: none;
+                color:  inherit;
+            }
+        }
+        & li:first-child{
+            text-decoration: underline;
+        }
+    }
+}
+
+.elsewhere {
+    grid-column: 17/21;
+}
+
+.contact {
+    grid-column: 21/23;
 }
 
 
