@@ -1,21 +1,27 @@
-  .fira-sans-regular {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  /*Regular*/
+  p {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 400;
+      font-style: normal;
   }
-  .fira-sans-bold {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+
+  /*Bold*/
+  b, h1, h2, h3, h4, h5, h6 {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 700;
+      font-style: normal;
   }
-  .fira-sans-regular-italic {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-style: italic;
+
+  /*Regular-italic*/
+  em {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 400;
+      font-style: italic;
   }
-  
-  .fira-sans-bold-italic {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 700;
-    font-style: italic;
+
+  /*Bold-italic*/
+  h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 700;
+      font-style: italic;
   }
