@@ -130,7 +130,7 @@ main {
 }
 
 /*Bold*/
-b, h1, h2, h3, h4, h5, h6 {
+b, h1, h2, h3, h4, h5, h6 , li b{
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
