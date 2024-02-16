@@ -18,12 +18,15 @@ body {
     padding: 0;
     width: 100%;
 }
+html{
+    font-size: 16px;
+}
 
 header {
     position: fixed;
     top: 0;
     background-color: white;
-    padding: 20px;
+    padding:1.25rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -31,10 +34,9 @@ header {
 
     & ul {
         background-color: rgb(136, 0, 0);
-        padding: 10px 0 10px 0;
+        padding: 0.625rem 0 0.625rem 0;
         display: flex;
         justify-content: space-around;
-        gap: 25px;
         width: 75%;
 
         & li {
@@ -54,7 +56,7 @@ header {
     }
 
     & img {
-        border-radius: 50px;
+        border-radius: 3rem;
     }
 }
 
@@ -107,6 +109,6 @@ footer {
 
 main {
     margin: 0 auto;
-    max-width: 50em;
-    margin-top: 140px;
+    max-width: 50rem;
+    margin-top: 8.75rem;
 }
