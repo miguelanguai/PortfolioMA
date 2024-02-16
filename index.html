@@ -53,8 +53,8 @@
       </p>
 
       <p>The technologies I master the most are JAVA, JavaScript & Laravel. I
-      also have basic knowledge about AWS and Azure, and use other technologies
-      for version controlling as git</p>
+        also have basic knowledge about AWS and Azure, and use other technologies
+        for version controlling as git</p>
     </section>
 
     <article>
@@ -237,12 +237,30 @@
         <a href="https://www.linkedin.com/in/miguelangelguaita/"><img src="assets/img/linkedinIcon.webp"
             alt="Go check my LinkedIn" width="100"></a>
       </div>
-      <div>
+      <section class="mailLink">
+        <h3>Mail</h3>
+
+        </a>
+        <p id="mailText" style="border:1px solid black;">miguelanguai@gmail.com</p>
+        <button onclick="copiarTexto()">Copiar</button>
+        <script>
+          function copiarTexto() {
+            let copiedMail = document.getElementById("mailText");
+            let tempInput = document.createElement("textarea");
+            tempInput.value = copiedMail.textContent;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            //TODO: añadir elementos que digan Copiar (hover) y copiado (una vez
+            //realizada la acción)
+          }
+        </script>
         <a href="mailto:miguelanguai@gmail.com?subject=Contact%20From%20Web%20Portfolio&body=Hi%20I%20think%20your%20website%20is%20interesting"
           title="Send me an email"><img src="assets/img/mailToIcon.png" alt="Send
-        me an email" width="100">
-        </a>
-      </div>
+      me an email" width="40">
+
+      </section>
 
     </section>
   </main>

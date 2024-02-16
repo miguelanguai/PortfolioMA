@@ -115,6 +115,12 @@ main {
     margin-top: 8.75rem;
 }
 
+.mailLink{
+    & p{
+        display: inline;
+    }
+}
+
 /*testing fonts*/
   /*Regular*/
   p {
@@ -143,3 +149,4 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
     font-weight: 700;
     font-style: italic;
 }
+
