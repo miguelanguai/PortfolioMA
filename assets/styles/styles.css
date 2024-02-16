@@ -60,8 +60,6 @@ header {
     }
 }
 
-header:first-child {}
-
 footer {
     color: white;
     background-color: rgb(136, 0, 0);
@@ -91,9 +89,6 @@ footer {
                 text-decoration: none;
                 color:  inherit;
             }
-        }
-        & li:first-child{
-            text-decoration: underline;
         }
     }
 }
