@@ -13,17 +13,20 @@ All Rights reserved
 */
 
 /*Paleta de colores a utilizar en la web (además de blanco y negro)
-#A60505
+#A60505 (background, rojo oscuro)
 #F20F0F
 #F23D3D
 #BFBFBF
 #0D0D0D
+#FFFFFF (color letras, blanco)
 */
 html,
 body {
     margin: 0;
     padding: 0;
     width: 100%;
+    background-color: #A60505;
+    color: #FFFFFF;
 }
 html{
     font-size: 16px;
@@ -32,7 +35,6 @@ html{
 header {
     position: fixed;
     top: 0;
-    background-color: white;
     padding:1.25rem;
     width: 100%;
     display: flex;
@@ -40,7 +42,7 @@ header {
     align-items: center;
 
     & ul {
-        background-color: rgb(136, 0, 0);
+        background-color: #BFBFBF;
         padding: 0.625rem 0 0.625rem 0;
         display: flex;
         justify-content: space-around;
@@ -51,7 +53,7 @@ header {
             list-style: none;
 
             & a {
-                color: white;
+                color: #0D0D0D;
                 text-decoration: none;
             }
 
@@ -68,8 +70,8 @@ header {
 }
 
 footer {
-    color: white;
-    background-color: rgb(136, 0, 0);
+    color:#0D0D0D;
+    background-color: #BFBFBF;
 
     display: grid;
     grid-template-columns: repeat(25, 1fr);
