@@ -125,8 +125,11 @@ main {
         display: inline;
     }
 }
+h2{
+    border-bottom: 0.05rem solid #A60505;
+}
 
-/*testing fonts*/
+/*Fonts*/
 /*Regular*/
 p,
 li,
@@ -135,7 +138,6 @@ a {
     font-weight: 400;
     font-style: normal;
 }
-
 /*Bold*/
 b,
 h1,
