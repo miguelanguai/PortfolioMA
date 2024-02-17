@@ -81,11 +81,11 @@ footer {
     width: 100%;
 
     & div {
-        grid-column: 17 / 23;
+        grid-column: 15 / 21;
     }
 
     & section {
-        grid-column: 5 / 15;
+        grid-column: 3 / 13;
         margin: 0 auto;
     }
 
@@ -106,11 +106,11 @@ footer {
 }
 
 .elsewhere {
-    grid-column: 17/21;
+    grid-column: 15/19;
 }
 
 .contact {
-    grid-column: 21/23;
+    grid-column: 19/21;
 }
 
 
