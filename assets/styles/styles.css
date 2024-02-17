@@ -29,9 +29,9 @@ body {
 
 html {
     font-size: 16px;
-    --header-height:2rem;
+    --header-height: 2rem;
     --header-height-extra: calc(var(--header-height) + 1.5rem);
-    scroll-padding-top: var(--header-height-extra); 
+    scroll-padding-top: var(--header-height-extra);
 }
 
 header {
@@ -125,7 +125,8 @@ main {
         display: inline;
     }
 }
-h2{
+
+h2 {
     border-bottom: 0.05rem solid #A60505;
 }
 
@@ -138,6 +139,7 @@ a {
     font-weight: 400;
     font-style: normal;
 }
+
 /*Bold*/
 b,
 h1,
@@ -169,4 +171,36 @@ h6 em {
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     font-style: italic;
+}
+
+/*Chat styles*/
+/* Styles to hid the chat window at the start */
+.chat-window {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #fff;
+    border: 0.125rem solid #A60505;
+    padding: 1rem;
+}
+
+/* Styles for closing window button */
+.close-chat {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background-color: #fff;
+    border: none;
+    padding: 0.3rem 0.2rem;
+    cursor: pointer;
+}
+
+/* Style for the opening chat button */
+#chat-button {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
 }

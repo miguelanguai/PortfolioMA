@@ -35,7 +35,7 @@
     </nav>
     
     <div>
-      <img src="assets/img/logoMA.png" alt="hamburguer" width="50">
+      <img src="assets/img/logoMA.png" alt="mi logo personal" width="50">
       <!--Esto debe ser un hamburguer, no el mismo logo-->
     </div>
   </header>
@@ -230,50 +230,58 @@
             //realizada la acción)
           }
         </script>
+        <!--
         <a href="mailto:miguelanguai@gmail.com?subject=Contact%20From%20Web%20Portfolio&body=Hi%20I%20think%20your%20website%20is%20interesting"
           title="Send me an email"><img src="assets/img/mailToIcon.svg" alt="Send
-      me an email" width="40">
-
+        me an email" width="40">
+          Esto, si está puesto, da problemas en el button para abrir el chat con
+          la pseudo-AI de abajo. No sé por qué, pero dejo aquí el codigo
+          comentado para agilizar el proceso cuando sea capaz de solucionarlo
+          -->
       </section>
 
     </section>
   </main>
 
   <aside>
-    <div>
-      <button>
+      <button id="chat-button">
         <img src="assets/img/chat.svg" alt="this is the AIChat opener
-        Icon" width="100">
+        Icon" width="40">
       </button>
-    </div>
-    <div>
-      <!-- 
-        Future Feat: This will be a fake "chat", created to make user able to
-        get info about me here are the possible questions and answers user can
-        ask the web. For now, they are displayed here. They will change with the
-        CSS and JS addition in the next semester.
-      -->
-
-      <p>
-        Hi! I'm Miguel. It's a pleasure to see you here. What can I do for you?
-      </p>
-
-
-      <div>
-        <button>
-          I want to see your Linkedin
-        </button>
-        <button>
-          I want to send you an email
-        </button>
-        <button>
-          I want to see your <abbr title="Curriculum Vitae">CV</abbr>
-        </button>
-        <button>
-          I want to see the projects you did
-        </button>
+      
+    <div id="chat-window" class="chat-window">
+      <!-- Chat content down here -->
+      <div id="chat-content">
+        <h2>¡Welcome to the AI Assistant!</h2>
+        <p>
+          Hi! I'm Miguel. It's a pleasure to see you here. What can I do for you?
+        </p>
+          <div id="chatOptions">
+            <button id="linkedinOption">
+              I want to see your Linkedin
+            </button>
+            <button id="mailOption">
+              I want to send you an email
+            </button>
+            <button id="cvOption">
+              I want to see your <abbr title="Curriculum Vitae">CV</abbr>
+            </button>
+            <button id="projectsOption">
+              I want to see the projects you did
+            </button>
+          </div>
+          <p id="chatContent"></p>
       </div>
-
+      <!-- Closing-chat button -->
+      <button id="chat-close" class="close-chat">X</button>
+    </div>
+    <script src="assets/scripts/chat.js"></script>
+  </aside>
+  <div class="otraParteDelAside">
+    
+    <!--Estas son las opciones que hay, que hay que ir poniéndolas, dependiendo
+    de la opción que se escoja en el chat-->
+    <!--
       <div>
         <p>Sure! Here you have it</p>
         <p><a href="https://www.linkedin.com/in/miguelangelguaita/" title="My
@@ -301,8 +309,8 @@
       </div>
 
     </div>
-  </aside>
-
+  </div>
+  -->
   <footer>
     <section>
       <h2>MIGUEL ÁNGEL GUAITA</h2>
@@ -333,7 +341,6 @@
           Mail
         </a></li>
     </ul>
-    <!--TODO: centrar el footer-->
   </footer>
 
 </body>
