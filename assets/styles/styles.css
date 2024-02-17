@@ -26,39 +26,38 @@ body {
     padding: 0;
     width: 100%;
 }
-html{
+
+html {
     font-size: 16px;
 }
 
 header {
     position: fixed;
     top: 0;
-    padding:1.25rem;
+    padding: 1.25rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    & ul {
+    & nav {
         background-color: #BFBFBF;
-        padding: 0.625rem 0 0.625rem 0;
         display: flex;
         justify-content: space-around;
         width: 75%;
 
-        & li {
-            display: inline;
-            list-style: none;
+        & a {
+            flex: 1;
+            text-align: center;
+            line-height: 3;
+            color: #0D0D0D;
+            text-decoration: none;
+        }
 
-            & a {
-                color: #0D0D0D;
-                text-decoration: none;
-            }
-
-            & a:hover {
-                text-decoration: underline;
-                cursor: pointer;
-            }
+        & a:hover {
+            cursor: pointer;
+            background-color: #A60505;
+            color: #FFFFFF;
         }
     }
 
@@ -68,7 +67,7 @@ header {
 }
 
 footer {
-    color:#0D0D0D;
+    color: #0D0D0D;
     background-color: #BFBFBF;
 
     display: grid;
@@ -91,10 +90,11 @@ footer {
 
         & li {
             line-height: 2.5;
+
             & a {
                 align-items: center;
                 text-decoration: none;
-                color:  inherit;
+                color: inherit;
             }
         }
     }
@@ -115,22 +115,31 @@ main {
     margin-top: 8.75rem;
 }
 
-.mailLink{
-    & p{
+.mailLink {
+    & p {
         display: inline;
     }
 }
 
 /*testing fonts*/
-  /*Regular*/
-  p, li{
+/*Regular*/
+p,
+li,
+a {
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 /*Bold*/
-b, h1, h2, h3, h4, h5, h6 , li b{
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li b {
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -144,9 +153,13 @@ em {
 }
 
 /*Bold-italic*/
-h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
     font-family: "Fira Sans", sans-serif;
     font-weight: 700;
     font-style: italic;
 }
-
