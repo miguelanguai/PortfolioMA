@@ -29,16 +29,21 @@ body {
 
 html {
     font-size: 16px;
+    --header-height:2rem;
+    --header-height-extra: calc(var(--header-height) + 1.5rem);
+    scroll-padding-top: var(--header-height-extra); 
 }
 
 header {
-    position: fixed;
-    top: 0;
-    padding: 1.25rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 1rem;
+    height: var(--header-height);
+    overflow: visible;
+    padding: 0.5rem;
 
     & nav {
         background-color: #BFBFBF;
@@ -49,9 +54,9 @@ header {
         & a {
             flex: 1;
             text-align: center;
-            line-height: 3;
             color: #0D0D0D;
             text-decoration: none;
+            padding: 1rem 0 1rem 0;
         }
 
         & a:hover {
