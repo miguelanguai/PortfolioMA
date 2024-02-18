@@ -129,6 +129,9 @@ main {
 h2 {
     border-bottom: 0.05rem solid #A60505;
 }
+footer h2 {
+    border-bottom: 0;
+}
 
 /*Fonts*/
 /*Regular*/
