@@ -217,19 +217,6 @@
         </a>
         <p id="mailText" style="border:1px solid black;">miguelanguai@gmail.com</p>
         <button onclick="copiarTexto()">Copiar</button>
-        <script>
-          function copiarTexto() {
-            let copiedMail = document.getElementById("mailText");
-            let tempInput = document.createElement("textarea");
-            tempInput.value = copiedMail.textContent;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-            //TODO: añadir elementos que digan Copiar (hover) y copiado (una vez
-            //realizada la acción)
-          }
-        </script>
         <!--
         <a href="mailto:miguelanguai@gmail.com?subject=Contact%20From%20Web%20Portfolio&body=Hi%20I%20think%20your%20website%20is%20interesting"
           title="Send me an email"><img src="assets/img/mailToIcon.svg" alt="Send
@@ -276,7 +263,6 @@
       <!-- Closing-chat button -->
       <button id="chat-close" class="close-chat">X</button>
     </div>
-    <script src="assets/scripts/chat.js"></script>
   </aside>
   <div class="otraParteDelAside">
     
@@ -332,4 +318,6 @@
 
 </body>
 
+<script src="assets/scripts/chat.js"></script>
+<script src="assets/scripts/copyMail.js"></script>
 </html>

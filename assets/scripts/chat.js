@@ -68,3 +68,4 @@ mailOption.addEventListener('click', chatMailOption);
 cvOption.addEventListener('click', chatCvOption);
 projectsOption.addEventListener('click', chatProjectsOption);
 
+
