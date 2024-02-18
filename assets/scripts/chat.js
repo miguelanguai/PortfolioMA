@@ -1,3 +1,5 @@
+"use strict";
+
 let chatButton = document.getElementById('chat-button');
 let chatWindow = document.getElementById('chat-window');
 let chatClose = document.getElementById('chat-close');

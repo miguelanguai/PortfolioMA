@@ -1,3 +1,5 @@
+"use strict";
+
 //para Copiar el texto del correo
 function copiarTexto() {
     let copiedMail = document.getElementById("mailText");
