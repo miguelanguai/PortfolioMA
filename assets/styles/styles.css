@@ -44,7 +44,7 @@ header {
     height: var(--header-height);
     overflow: visible;
     padding: 0.5rem;
-
+    z-index: 1; /*meant to be above the carousel and every other section*/
     & nav {
         background-color: #BFBFBF;
         display: flex;
@@ -208,8 +208,11 @@ h6 em {
 /*Carousel*/
 .carousel {
     position: relative;
-    width: 100%;
+    width: 50%;
+    height: 20rem;
     overflow: hidden;
+    border-radius: 0.5rem;
+    border: #A60505 0.25rem solid;
 }
 .carousel-inner {
     display: flex;
@@ -219,22 +222,22 @@ h6 em {
 }
 .carousel-item img {
     width: 100%;
-    height: auto;
+    height: 20rem;
 }
 .carousel-control {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #a6050581;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 0.625rem;
     font-size: 1.5em;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 .carousel-control:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #A60505;
 }
 .prev {
     left: 0;
@@ -242,3 +245,20 @@ h6 em {
 .next {
     right: 0;
 }
+.carousel-text {
+    display: none; /* Hides the text by default */
+    position: absolute;
+    bottom: 0.625rem;
+    top: 0.625rem;
+    left: 0rem;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.325rem;
+    border-radius: 0.325rem;
+  }
+  
+  .carousel-item:hover .carousel-text {
+    display: block; /* Shows the text when hovering */
+  }
+  

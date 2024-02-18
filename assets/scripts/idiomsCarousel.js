@@ -10,15 +10,15 @@ function showItem(index) {
     
     if (currentItem) {
       currentItem.classList.remove('active');
-      currentItem.style.display = 'none'; // Oculta el item anterior
+      currentItem.style.display = 'none'; // hides the previous item
     }
   
     if (items[index]) {
       items[index].classList.add('active');
-      items[index].style.display = 'block'; // Muestra el nuevo item
+      items[index].style.display = 'block'; // shows the new item
     } else {
-      currentItem.classList.add('active'); // Si el índice es inválido, deja el item actual activo
-      currentItem.style.display = 'block'; // Muestra el item actual
+      currentItem.classList.add('active'); // if item invalid, the last one active
+      currentItem.style.display = 'block'; // shows the actual item
     }
   }
   
