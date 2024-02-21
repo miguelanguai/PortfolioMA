@@ -68,6 +68,11 @@ header {
     }
 }
 
+.projects article a img{
+    max-width: 100%;
+  height: auto;
+}
+
 footer {
     color: #0D0D0D;
     background-color: #BFBFBF;
