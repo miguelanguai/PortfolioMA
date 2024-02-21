@@ -321,4 +321,7 @@ h6 em {
     main{
         padding: 0 1.5rem 0 2rem;
     }
+    .carousel{
+        width: 100%;
+    }
 }
