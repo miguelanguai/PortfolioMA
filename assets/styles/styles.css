@@ -308,3 +308,9 @@ h6 em {
     display: block;
     text-align: center;
 }
+
+@media screen and (max-width: 850px){
+    main{
+        padding: 0 1.5rem 0 2rem;
+    }
+}
