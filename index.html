@@ -32,10 +32,10 @@
       <a href="#projects">Projects</a>
       <a href="#stack">My Stack</a>
       <a href="#works">Works</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
-    
+
     <div>
       <img src="assets/img/logoMA.png" alt="mi logo personal" width="50">
       <!--Esto debe ser un hamburguer, no el mismo logo-->
@@ -105,40 +105,94 @@
 
     <section>
       <h2 id="stack">My Stack</h2>
-      <!--Future Feat: Here I want to add a carousel showing the technologies I
-      know-->
-      <ul>
-        <li>Front-End
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>JavaScript</li>
+      <ul class="badges-list">
+        <li class="section">
+          <h3 class="section-title">Frontend</h3>
+          <ul class="badge-items">
+            <li class="badge-item">
+              <img src="assets/img/stack/HTML5.png" alt="HTML icon" class="badge-icon">
+              <span class="badge-text">HTML</span>
+            </li>
+            <li class="badge-item">
+              <img src="assets/img/stack/CSS3.png" alt="CSS icon" class="badge-icon">
+              <span class="badge-text">CSS</span>
+            </li>
+            <li class="badge-item">
+              <img src="assets/img/stack/Javascript.png" alt="JavaScript icon" class="badge-icon">
+              <span class="badge-text">JavaScript</span>
+            </li>
+            <li class="badge-item">
+              <img src="assets/img/stack/Bootstrap.png" alt="Bootstrap icon" class="badge-icon">
+              <span class="badge-text">Bootstrap</span>
+            </li>
           </ul>
         </li>
-        <li>Back-End
-          <ul>
-            <li>Bash</li>
-            <li><abbr title="Hypertext Preprocessor">PHP</abbr></li>
-            <li>Laravel</li>
-            <li>JAVA</li>
-            <li>MySQL</li>
-            <li>Docker</li>
-            <li><abbr title="Extensive Markup Language">XML</abbr></li>
+        <li class="section">
+          <h3 class="section-title">Backend</h3>
+          <ul class="badge-items">
+            <li class="badge-item">
+              <img src="assets/img/stack/Bash.png" alt="Bash icon" class="badge-icon">
+              <span class="badge-text">Bash</span>
+            </li>
+            <li class="badge-item">
+              <img src="assets/img/stack/PHP.png" alt="PHP icon" class="badge-icon">
+              <span class="badge-text">PHP</span>
+            </li>
+            <li class="badge-item">
+              <img src="assets/img/stack/Laravel.png" alt="Laravel icon" class="badge-icon">
+              <span class="badge-text">Laravel</span>
+            </li>
+            <li class="badge-item">
+              <img src="assets/img/stack/JAVA.jpg" alt="JAVA icon" class="badge-icon">
+              <span class="badge-text">JAVA</span>
+            </li>
+            <li class="badge-item">
+              <img src="assets/img/stack/MYSQL.png" alt="MySQL icon" class="badge-icon">
+              <span class="badge-text">MySQL</span>
+            </li>
+            <li class="badge-item">
+              <img src="assets/img/stack/XML.png" alt="XML icon" class="badge-icon">
+              <span class="badge-text">XML</span>
+            </li>
           </ul>
         </li>
-        <li>Version Controlling
-          <ul>
-            <li>Git</li>
+        <li class="section">
+          <h3 class="section-title">Version Controlling</h3>
+          <ul class="badge-items">
+            <li class="badge-item">
+              <img src="assets/img/stack/git.png" alt="git icon"
+              class="badge-icon">
+              <span class="badge-text">git</span>
+            </li>
           </ul>
         </li>
-        <li>Deployment
-          <ul>
-            <li>Azure</li>
-            <li>Amazon Web Services</li>
+        <li class="section">
+          <h3 class="section-title">Deployment</h3>
+          <ul class="badge-items">
+            <li class="badge-item">
+              <img src="assets/img/stack/AWS.png" alt="AWS icon" class="badge-icon">
+              <span class="badge-text">AWS</span>
+            </li>
+            <li class="badge-item">
+              <img src="assets/img/stack/Azure.png" alt="Azure icon" class="badge-icon">
+              <span class="badge-text">Azure</span>
+            </li>
+            <li class="badge-item">
+              <img src="assets/img/stack/Docker.png" alt="Docker icon" class="badge-icon">
+              <span class="badge-text">Docker</span>
+            </li>
+            <li class="badge-item">
+              <img src="assets/img/stack/Kubernetes.png" alt="Kubernetes icon" class="badge-icon">
+              <span class="badge-text">Kubernetes</span>
+            </li>
           </ul>
         </li>
       </ul>
+
+
+
+
+
     </section>
 
     <article>
@@ -191,9 +245,9 @@
       <article>
         <h3>My languages</h3>
         <p>Besides being a native speaker in spanish and catalan, I also know
-        another languages.</p>
+          another languages.</p>
         <p>Learning languages is something simple for me and a thing I always
-        like to do.</p>
+          like to do.</p>
         <div class="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -239,12 +293,12 @@
                 <p>Now learning this one!</p>
               </div>
             </div>
-            
+
           </div>
           <button class="carousel-control prev">&#10094;</button>
           <button class="carousel-control next">&#10095;</button>
         </div>
-      
+
       </article>
     </article>
 
@@ -281,11 +335,11 @@
   </main>
 
   <aside>
-      <button id="chat-button">
-        <img src="assets/img/chat.svg" alt="this is the AIChat opener
+    <button id="chat-button">
+      <img src="assets/img/chat.svg" alt="this is the AIChat opener
         Icon" width="40">
-      </button>
-      
+    </button>
+
     <div id="chat-window" class="chat-window">
       <!-- Chat content down here -->
       <div id="chat-content">
@@ -293,26 +347,26 @@
         <p>
           Hi! I'm Miguel. It's a pleasure to see you here. What can I do for you?
         </p>
-          <div id="chatOptions">
-            <button id="linkedinOption">
-              I want to see your Linkedin
-            </button>
-            <button id="mailOption">
-              I want to send you an email
-            </button>
-            <button id="cvOption">
-              I want to see your <abbr title="Curriculum Vitae">CV</abbr>
-            </button>
-            <button id="projectsOption">
-              I want to see the projects you did
-            </button>
-          </div>
-          <div id="userChatContent"></div>
-          <div id="chatLastAnswer"></div>
+        <div id="chatOptions">
+          <button id="linkedinOption">
+            I want to see your Linkedin
+          </button>
+          <button id="mailOption">
+            I want to send you an email
+          </button>
+          <button id="cvOption">
+            I want to see your <abbr title="Curriculum Vitae">CV</abbr>
+          </button>
+          <button id="projectsOption">
+            I want to see the projects you did
+          </button>
+        </div>
+        <div id="userChatContent"></div>
+        <div id="chatLastAnswer"></div>
       </div>
       <!-- Closing-chat button -->
-      <button id="chat-close" class="close-chat"><img src="assets/img/cross.svg"
-      alt="This is the closing window button" width="10"></button>
+      <button id="chat-close" class="close-chat"><img src="assets/img/cross.svg" alt="This is the closing window button"
+          width="10"></button>
     </div>
   </aside>
 

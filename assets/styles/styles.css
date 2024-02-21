@@ -39,7 +39,9 @@ header {
     height: var(--header-height);
     overflow: visible;
     padding: 0.5rem;
-    z-index: 1; /*meant to be above the carousel and every other section*/
+    z-index: 1;
+
+    /*meant to be above the carousel and every other section*/
     & nav {
         background-color: #BFBFBF;
         display: flex;
@@ -124,6 +126,7 @@ main {
 h2 {
     border-bottom: 0.05rem solid #A60505;
 }
+
 footer h2 {
     border-bottom: 0;
 }
@@ -212,16 +215,20 @@ h6 em {
     border-radius: 0.5rem;
     border: #A60505 0.25rem solid;
 }
+
 .carousel-inner {
     display: flex;
 }
+
 .carousel-item {
     flex: 0 0 100%;
 }
+
 .carousel-item img {
     width: 100%;
     height: 20rem;
 }
+
 .carousel-control {
     position: absolute;
     top: 50%;
@@ -234,17 +241,22 @@ h6 em {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .carousel-control:hover {
     background-color: #A60505;
 }
+
 .prev {
     left: 0;
 }
+
 .next {
     right: 0;
 }
+
 .carousel-text {
-    display: none; /* Hides the text by default */
+    display: none;
+    /* Hides the text by default */
     position: absolute;
     bottom: 0.625rem;
     top: 0.625rem;
@@ -254,9 +266,45 @@ h6 em {
     color: white;
     padding: 0.325rem;
     border-radius: 0.325rem;
-  }
-  
-  .carousel-item:hover .carousel-text {
-    display: block; /* Shows the text when hovering */
-  }
-  
+}
+
+.carousel-item:hover .carousel-text {
+    display: block;
+    /* Shows the text when hovering */
+}
+
+/* stack badges*/
+.badges-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.5em;
+}
+
+.badge-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.badge-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.badge-icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+}
+
+.badge-text {
+    display: block;
+    text-align: center;
+}
