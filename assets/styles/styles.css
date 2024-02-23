@@ -414,6 +414,10 @@ h6 em {
         display: block;
     }
 
+    .education .educationList{
+        display: block;
+    }
+
     .carousel {
         width: 100%;
     }
