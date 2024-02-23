@@ -70,9 +70,42 @@ header {
     }
 }
 
-.projects article a img{
+.projects article a img {
     max-width: 100%;
-  height: auto;
+    height: auto;
+}
+
+.education {
+    & .educationList {
+        display: flex;
+        justify-content: space-around;
+
+        & section {
+            margin: 0 1rem;
+        }
+
+        & h4 {
+            font-weight: 700;
+            padding-bottom: 1rem;
+        }
+
+        & ul {
+            padding: 0;
+
+            & li {
+                list-style-type: none;
+                margin: 0.5rem 0.25rem;
+                border-left: 2px solid #A60505;
+            }
+
+            & li:hover {
+                position: relative;
+                left: 0.5rem;
+                color: #fff;
+                background-color: #A60505;
+            }
+        }
+    }
 }
 
 footer {
@@ -317,11 +350,12 @@ h6 em {
     text-align: center;
 }
 
-@media screen and (max-width: 850px){
-    main{
+@media screen and (max-width: 850px) {
+    main {
         padding: 0 1.5rem 0 2rem;
     }
-    .carousel{
+
+    .carousel {
         width: 100%;
     }
 }
