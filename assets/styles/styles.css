@@ -280,6 +280,10 @@ main {
     left: 1rem;
     padding: 0.625rem 1.25rem;
     cursor: pointer;
+
+    & img {
+        width: 2.5rem;
+    }
 }
 
 /*Carousel for idioms*/
@@ -359,8 +363,9 @@ footer {
     margin: 0 auto;
     width: 100%;
 
-    & h2{
+    & h2 {
         border-bottom: 0;
+        line-height: 2rem;
     }
 
     & div {
@@ -407,11 +412,30 @@ footer {
         display: block;
     }
 
-    .education .educationList{
+    .education .educationList {
         display: block;
     }
 
     .carousel {
         width: 100%;
+    }
+
+    /*
+    #chat-button, #chat-button img{
+        width: 0.5rem;
+    }
+    */
+    #chat-button {
+        padding: 0.25rem;
+        right: 1rem;
+        left: auto;
+    }
+
+    #chat-button img {
+        width: 1rem;
+    }
+
+    footer {
+        display: block;
     }
 }
