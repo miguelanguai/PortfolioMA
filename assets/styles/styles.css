@@ -58,7 +58,7 @@ body {
 html {
     font-size: 16px;
     --header-height: 2rem;
-    --header-height-extra: calc(var(--header-height) + 1.5rem);
+    --header-height-extra: calc(var(--header-height) + 3.5rem);
     scroll-padding-top: var(--header-height-extra);
 }
 
