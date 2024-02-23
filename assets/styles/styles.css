@@ -64,7 +64,7 @@ header {
             color: #FFFFFF;
         }
     }
-
+    
     & img {
         border-radius: 3rem;
     }
@@ -73,6 +73,92 @@ header {
 .projects article a img {
     max-width: 100%;
     height: auto;
+}
+
+/* Stack section*/
+.badges-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.5em;
+}
+
+.badge-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.badge-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.badge-icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+}
+
+.badge-text {
+    display: block;
+    text-align: center;
+}
+
+/*Works section*/
+.works-container {
+    margin: 0 auto;
+}
+
+.works-box {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+
+.works_item {
+    flex-basis: calc(33.33333% - 2rem);
+    margin: 0 1rem 2rem;
+    overflow: hidden;
+    border-radius: 1.75rem;
+    border: 2px solid #A60505;
+    display: block;
+    padding: 2rem 1.25rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.works-item_title {
+    min-height: 4rem;
+    line-height: 2rem;
+    margin: 0 0 1.5rem;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 2rem;
+    position: relative;
+}
+
+.works-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        max-width: 3rem;
+        max-height: 3rem;
+        padding: 0.25rem;
+        border: 2px solid #A60505;
+        border-radius: 0.25rem;
+        margin: 0 0.25rem 0.25rem 0;
+    }
 }
 
 .education {
@@ -314,41 +400,6 @@ h6 em {
     /* Shows the text when hovering */
 }
 
-/* stack badges*/
-.badges-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.section {
-    margin-bottom: 20px;
-}
-
-.section-title {
-    font-size: 1.5em;
-}
-
-.badge-items {
-    list-style-type: none;
-    padding: 0;
-}
-
-.badge-item {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.badge-icon {
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin: 0 auto 10px;
-}
-
-.badge-text {
-    display: block;
-    text-align: center;
-}
 
 @media screen and (max-width: 850px) {
     main {
