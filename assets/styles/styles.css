@@ -1,441 +1,48 @@
-* {
-    box-sizing: border-box;
-}
-
-
-/*Fonts*/
-/*Regular*/
-p,
-li,
-a {
-    font-family: "Fira Sans", Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/*Bold*/
-b,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li b {
-    font-family: "Fira Sans", Arial, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-/*Regular-italic*/
-em {
-    font-family: "Fira Sans", Arial, sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-/*Bold-italic*/
-h1 em,
-h2 em,
-h3 em,
-h4 em,
-h5 em,
-h6 em {
-    font-family: "Fira Sans", Arial, sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-size: 1.25rem;
-    line-height: 1.4rem;
-}
-
 html {
     font-size: 16px;
-    --header-height: 2rem;
-    --header-height-extra: calc(var(--header-height) + 3.5rem);
-    scroll-padding-top: var(--header-height-extra);
 }
-
-h2 {
-    border-bottom: 0.05rem solid #A60505;
-}
-
-/*header*/
-header {
+html, body{
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto;
+    padding: 0;
     width: 100%;
+    font-size: 1.15rem;
+    line-height: 1.4rem;
+}
+header{
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    position: sticky;
-    top: 1rem;
-    height: var(--header-height);
-    overflow: visible;
-    padding: 0.5rem;
-    z-index: 1;
-
-    /*meant to be above the carousel and every other section*/
-    & nav {
-        background-color: #BFBFBF;
-        display: flex;
-        justify-content: space-around;
-        width: 75%;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        margin-top: auto;
-
-        & a {
-            flex: 1;
-            text-align: center;
-            color: #0D0D0D;
-            text-decoration: none;
-            padding: 1rem 0 1rem 0;
-        }
-
-        & a:hover {
-            cursor: pointer;
-            background-color: #A60505;
-            color: #FFFFFF;
-        }
-    }
-
-    & img {
-        border-radius: 3rem;
-    }
-}
-
-/*main*/
-main {
-    margin: 0 auto;
-    max-width: 50rem;
-    margin-top: 2.75rem;
-    padding-bottom: 2rem;
-}
-
-/*projects*/
-.projects article a img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Stack section*/
-.badges-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.section {
-    margin-bottom: 20px;
-}
-
-.section-title {
-    font-size: 1.5em;
-}
-
-.badge-items {
-    list-style-type: none;
-    padding: 0;
-}
-
-.badge-item {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.badge-icon {
-    display: block;
-    width: 50px;
-    height: 50px;
-    margin: 0 auto 10px;
-}
-
-.badge-text {
-    display: block;
-    text-align: center;
-}
-
-/*Works section*/
-.works-container {
-    margin: 0 auto;
-}
-
-.works-box {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 3rem 0;
-}
-
-.works_item {
-    flex-basis: calc(33.33333% - 2rem);
-    margin: 0 1rem 2rem;
-    overflow: hidden;
-    border-radius: 1.75rem;
-    border: 2px solid #A60505;
-    display: block;
-    padding: 2rem 1.25rem;
-    overflow: hidden;
-    position: relative;
-}
-
-.works-item_title {
-    min-height: 4rem;
-    line-height: 2rem;
-    margin: 0 0 1.5rem;
-    overflow: hidden;
-    font-weight: 700;
-    font-size: 2rem;
-    position: relative;
-}
-
-.works-stack {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    font-size: 0.75rem;
+    margin:1rem;
 
-    & img {
-        max-width: 3rem;
-        max-height: 3rem;
-        padding: 0.25rem;
-        border: 2px solid #A60505;
-        border-radius: 0.25rem;
-        margin: 0 0.25rem 0.25rem 0;
-    }
-}
-
-/*Education section*/
-.education {
-    & .educationList {
-        display: flex;
-        justify-content: space-around;
-
-        & section {
-            margin: 0 1rem;
-        }
-
-        & h4 {
-            font-weight: 700;
-            padding-bottom: 1rem;
-        }
-
-        & ul {
-            padding: 0;
-
-            & li {
-                list-style-type: none;
-                margin: 0.5rem 0.25rem;
-                border-left: 2px solid #A60505;
-            }
-
-            & li:hover {
-                position: relative;
-                left: 0.5rem;
-                color: #fff;
-                background-color: #A60505;
-            }
-        }
-    }
-}
-
-/*Mail element*/
-.mailLink {
-    & p {
-        display: inline;
-    }
-}
-
-/*Chat styles for AI in aside*/
-/* Styles to hid the chat window at the start */
-.chat-window {
-    display: none;
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    background-color: #fff;
-    border: 0.125rem solid #A60505;
-    padding: 1rem;
-}
-
-/* Styles for closing window button */
-.close-chat {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background-color: #fff;
-    border: none;
-    padding: 0.3rem 0.2rem;
-    cursor: pointer;
-}
-
-/* Style for the opening chat button */
-#chat-button {
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
-    padding: 0.625rem 1.25rem;
-    cursor: pointer;
-
-    & img {
-        width: 2.5rem;
-    }
-}
-
-/*Carousel for idioms*/
-.carousel {
-    position: relative;
-    width: 50%;
-    height: 20rem;
-    overflow: hidden;
-    border-radius: 0.5rem;
-    border: #A60505 0.25rem solid;
-}
-
-.carousel-inner {
-    display: flex;
-}
-
-.carousel-item {
-    flex: 0 0 100%;
-}
-
-.carousel-item img {
+    position:fixed;
+    top:0;
     width: 100%;
-    height: 20rem;
-}
+    
+    nav{
+        padding: 0.5rem;
+        border-radius: 1rem;
+        background-color: transparent;
+        box-shadow: 0.01rem 0rem 0.4rem 0.05rem rgb(88, 88, 88);
+    }
 
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #a6050581;
-    color: white;
-    border: none;
-    padding: 0.625rem;
-    font-size: 1.5em;
-    cursor: pointer;
+    a{
+        color: grey;
+        text-decoration: none;
+        padding: 0.25rem;
+    }
+    a:hover{
+        color:  #A60505;
+    }
     transition: background-color 0.3s;
 }
 
-.carousel-control:hover {
-    background-color: #A60505;
+.scroll-header {
+    background-color: rgb(255, 255, 255,  85%); /* Color when scrolled */
 }
-
-.prev {
-    left: 0;
-}
-
-.next {
-    right: 0;
-}
-
-.carousel-text {
-    display: none;
-    /* Hides the text by default */
-    position: absolute;
-    bottom: 0.625rem;
-    top: 0.625rem;
-    left: 0rem;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 0.325rem;
-    border-radius: 0.325rem;
-}
-
-.carousel-item:hover .carousel-text {
-    display: block;
-    /* Shows the text when hovering */
-}
-
-/*footer section*/
-footer {
-    color: #0D0D0D;
-    background-color: #BFBFBF;
-
-    display: grid;
-    grid-template-columns: repeat(25, 1fr);
-    margin: 0 auto;
-    width: 100%;
-
-    & h2 {
-        border-bottom: 0;
-        line-height: 2rem;
-    }
-
-    & div {
-        grid-column: 15 / 21;
-    }
-
-    & section {
-        grid-column: 3 / 13;
-        margin: 0 auto;
-    }
-
-    & ul {
-        list-style: none;
-        padding-left: 0;
-
-        & li {
-            line-height: 2.5;
-
-            & a {
-                align-items: center;
-                text-decoration: none;
-                color: inherit;
-            }
-        }
-    }
-}
-
-.elsewhere {
-    grid-column: 15/19;
-}
-
-.contact {
-    grid-column: 19/21;
-}
-
-/*media queries*/
-@media screen and (max-width: 850px) {
-
-    main {
-        padding: 0 1.5rem 0 2rem;
-    }
-
-    .works-box {
-        display: block;
-    }
-
-    .education .educationList {
-        display: block;
-    }
-
-    .carousel {
-        width: 100%;
-    }
-
-    /*
-    #chat-button, #chat-button img{
-        width: 0.5rem;
-    }
-    */
-    #chat-button {
-        padding: 0.25rem;
-        right: 1rem;
-        left: auto;
-    }
-
-    #chat-button img {
-        width: 1rem;
-    }
-
-    footer {
-        display: block;
-    }
+main{
+    margin-top: 4rem;
 }

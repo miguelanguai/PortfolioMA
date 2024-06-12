@@ -14,50 +14,49 @@
   <link rel="stylesheet" href="assets/styles/styles.css">
   <!--basic favicon-->
   <link rel="icon" href="assets/img/logoMA.ico" type="image/x-icon">
-  <!--fonts  embedded-->
-  <!--
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-    -->
 </head>
 
 <body>
   <header>
-    <div>
-      <img src="assets/img/logoMA.png" alt="mi logo personal" width="50">
-    </div>
-    <nav class="container">
+    <nav class="container" id="header-nav">
       <a href="#projects">Projects</a>
       <a href="#stack">My Stack</a>
       <a href="#works">Works</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
-
-    <div>
-      <img src="assets/img/logoMA.png" alt="mi logo personal" width="50">
-      <!--Esto debe ser un hamburguer, no el mismo logo-->
-    </div>
   </header>
 
   <main>
 
-    <section>
-      <p>Disclaimer: Hey! I suppose you will be shocked to see such an ugly web page. This
-        is a Work-In-Progress project, and I'm still working on it.</p>
+    <section class="introduction">
+
+      <div class="sobretitulo">
+        <img src="assets/img/imagenPersonal.jpg" width="90">
+        <!--Aqui en la imagen va una personal mía-->
+        <p>Disponible para trabajar</p>
+      </div>
       <h1>Miguel Ángel Guaita</h1>
-      <h2>Junior Programmer</h2>
+      <h2>Programador Junior. Spring Boot + Angular</h2>
 
-      <p>
-        I'm a Junior programmer who is starting in the world of Web Development.
-        This is my personal website where you can find out more about me!
-      </p>
+      <div class="texto-introduccion">
+        <p>
+          Técnico Superior en Desarrollo Web de Valencia, España.
+          Este es mi sitio web personal, donde puedes encontrar más sobre mí.
+        </p>
+      </div>
 
-      <p>The technologies I master the most are JAVA, JavaScript & Laravel. I
-        also have basic knowledge about AWS and Azure, and use other technologies
-        for version controlling as git</p>
+      <div class="introduccion-links">
+        <a href="">
+          <img src="" alt="aquí un icono de correo">
+          <span>Mándame un email</span>
+        </a>
+        <a href="">
+          <img src="assets/img/linkedinIcon.webp" alt="aquí un icono de Linkedin" width="20">
+          <span>Mi Linkedin</span>
+        </a>
+      </div>
+
     </section>
 
     <article class="projects">
@@ -103,7 +102,7 @@
 
     </article>
 
-    <section>
+    <section class="stack-list">
       <h2 id="stack">My Stack</h2>
       <ul class="badges-list">
         <li class="section">
@@ -435,5 +434,6 @@
 <script src="assets/scripts/chat.js"></script>
 <script src="assets/scripts/copyMail.js"></script>
 <script src="assets/scripts/idiomsCarousel.js"></script>
+<script src="assets/scripts/header.js"></script>
 
 </html>
