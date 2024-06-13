@@ -309,22 +309,6 @@ main {
 
 }
 
-#chat-button {
-    position: fixed;
-    bottom: 1rem;
-    left: 1rem;
-    padding: 0.625rem 1.25rem;
-    cursor: pointer;
-
-    & img {
-        width: 2.5rem;
-    }
-}
-
-#chat-window{
-    display: none;
-}
-
 footer {
     margin: 4rem 14rem 4rem 14rem;
     display: flex;
