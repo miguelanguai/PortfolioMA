@@ -19,6 +19,7 @@ let buttonOptions = [
 // Open the chat function
 chatButton.addEventListener('click', function() {
     chatWindow.style.display = 'block'; // Shows chat window
+    chatButton.style.display = 'none'; // Hides opening-button
 });
 
 //  Close the chat function
@@ -29,6 +30,7 @@ chatClose.addEventListener('click', function() {
     */
     makeOptionsAppear(buttonOptions);    
     chatWindow.style.display = 'none'; // Closes chat window
+    chatButton.style.display = 'block'; // Shows opening-button
 });
 
 function chatLinkedinOption (){

@@ -20,7 +20,7 @@ header {
     justify-content: center;
     font-size: 0.75rem;
     margin: 1rem;
-
+    z-index: 3;
     position: fixed;
     top: 0;
     width: 100%;
@@ -40,6 +40,11 @@ header {
 
     a:hover {
         color: #A60505;
+    }
+
+    .contact {
+        font-weight: 700;
+        color: #5a0000;
     }
 
     transition: background-color 0.3s;
@@ -70,6 +75,7 @@ main {
             overflow: hidden;
             z-index: 1;
             color: #A60505;
+            font-weight: 600;
         }
 
         .link-linkedin-1:before {
@@ -148,5 +154,203 @@ main {
         }
     }
 
+    section {
+        margin-top: 1.5rem
+    }
+
+    .section-title {
+        display: inline;
+    }
+
+    .cards {
+        margin-top: 2rem;
+    }
+
+    .job {
+        display: flex;
+        margin-bottom: 3rem;
+    }
+
+    .job-card {
+        position: relative;
+        width: 18rem;
+        height: 12rem;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        perspective: 1000px;
+        box-shadow: 0 0 0 5px #ffffff80;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .job-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    }
+
+    .job-card_content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 1.25rem;
+        box-sizing: border-box;
+        background-color: #f2f2f2;
+        transform: rotateX(-90deg);
+        transform-origin: bottom;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .job-card:hover .job-card_content {
+        transform: rotateX(0deg);
+    }
+
+    .job-card_title {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #333;
+        font-weight: 700;
+    }
+
+    .job-card_subtitle {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .job-card_description {
+        margin: 10px 0 0;
+        font-size: 0.8rem;
+        color: #777;
+        line-height: 1.2;
+    }
+
+    .link-icon {
+        position: fixed;
+        top: 1.25rem;
+        right: 1.25rem;
+    }
+
+    .job-stack {
+        margin-left: 4rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex: 1rem;
+
+        .technology {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 1rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 1rem;
+
+            span {
+                margin-left: 1rem;
+                font-size: 0.85rem;
+                color: white;
+            }
+        }
+
+        .java {
+            background-color: #5a0000;
+        }
+
+        .springboot {
+            background-color: #005700;
+        }
+
+        .angular {
+            background-color: #002794;
+        }
+
+        .sql {
+            background-color: #000000;
+        }
+
+        .html {
+            background-color: #9c5300;
+        }
+
+        .css {
+            background-color: #002794;
+        }
+
+        .jira {
+            background-color: #002794;
+        }
+
+        .ts {
+            background-color: #858585;
+        }
+
+        .js {
+            background-color: #a8a500;
+        }
+
+        .git {
+            background-color: #a54200;
+        }
+    }
+
+    .about-body {
+        display: flex;
+    }
+
+    /* Style for the opening chat button */
+
+
+
+
+}
+
+#chat-button {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+
+    & img {
+        width: 2.5rem;
+    }
+}
+
+#chat-window{
+    display: none;
+}
+
+footer {
+    margin: 4rem 14rem 4rem 14rem;
+    display: flex;
+    justify-content: space-between;
+
+    .links {
+        display: flex;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: #000000;
+                }
+            }
+
+            a:hover {
+                color: #5a0000;
+            }
+        }
+    }
 
 }

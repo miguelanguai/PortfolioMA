@@ -19,11 +19,10 @@
 <body>
   <header>
     <nav class="container" id="header-nav">
-      <a href="#projects">Projects</a>
-      <a href="#stack">My Stack</a>
-      <a href="#works">Works</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#experience">Experiencia</a>
+      <a href="#about">Sobre mí</a>
+      <a href="mailto:miguelanguai@gmail.com?subject=Contact%20From%20Web%20Portfolio&body=Hi%20I%20think%20your%20website%20is%20interesting"
+        class="contact">Contacto</a>
     </nav>
   </header>
 
@@ -51,312 +50,218 @@
       </div>
 
       <div class="introduccion-links">
-        <a href="">
+        <a
+          href="mailto:miguelanguai@gmail.com?subject=Contact%20From%20Web%20Portfolio&body=Hi%20I%20think%20your%20website%20is%20interesting">
           <img src="assets/img/mailToIcon.svg" alt="aquí un icono de correo" width="20">
           <span>Mándame un email</span>
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/miguelangelguaita/">
           <img src="assets/img/linkedinIcon.webp" alt="aquí un icono de Linkedin" width="20">
           <span>Mi Linkedin</span>
         </a>
+        <a href="https://github.com/miguelanguai">
+          <img src="assets/img/github.png" alt="aquí un icono de Github" width="20">
+          <span>Mi Github</span>
+        </a>
       </div>
 
     </section>
 
-    <article class="projects">
-      <h2 id="projects">Projects</h2>
-      <p>For the moment, I don't have many projects, because I'm starting
-        working as a web developer, but you can see my <em>very first</em> two
-        projects. I hope to add more new ones in the future.
-      </p>
+    <section id="experience">
+      <div class="section-title">
+        <img src="assets/img/computer.svg" alt="aqui una imagen de un ordenador svg" width="40">
+        <h2 class="section-title">Experiencia</h2>
+      </div>
 
-      <article>
-        <h3>FIRESPOTTERS</h3>
-        <p>
-          This project consists of a predictor of wildfires' movement in real
-          time. It uses 2 <abbr title="Application Programing
-          Interface">API</abbr>s to guess where a wildfire will develop and it
-          shows it on the map with colorful cones. This was a project I made in
-          2023 <em>
-            <abbr title="National Aeronautics and Space Administration">NASA
-            </abbr>
-            SpaceApps Hackathon</em> event and it won the data use prize and the
-          best project.
-        </p>
-        <p>Technologies: HTML, CSS and JavaScript</p>
-        <a href="https://miguelanguai.github.io/FireSpotter/" title="The project
-        I worked in at a hackathon">
-          <img src="assets/img/fireSpottersImg.png" alt="this is the image of
-          firespotters web" width="800">
-        </a>
-      </article>
+      <div class="cards">
 
-      <article>
-        <h3>PARCHIS</h3>
-        <p>This was my last project in my first course of programming. It
-          consists of a parchis game that can be played locally and online by two
-          players.
-        </p>
-        <p>Technologies: JAVA</p>
-        <a href="https://github.com/miguelanguai/javachis-1/tree/main" title="The first project I have ever created">
-          <img src="assets/img/javachis.png" alt="this is the image of parchis
-          java project" width="800">
-        </a>
-      </article>
+        <div class="job">
+          <div class="job-card">
+            <img src="assets/img/capgeminiLogo.png" alt="Logo Capgemini" width="400">
+            <div class="job-card_content">
+              <p class="job-card_title">CapGemini</p>
+              <p class="job-card_subtitle">Marzo 2024 - Mayo 2024</p>
+              <p class="job-card_description">
+                Desarrollo de tareas en proyectos internos de Sring Boot y Angular, empleando git como sistema de
+                control
+                de versiones y utilizando Microsoft Teams para realizar los meetings diarios, con la metodología Scrum.
+              </p>
+            </div>
+          </div>
+          <div class="job-stack">
+            <div class="technology java">
+              <img src="assets/img/stack/java.svg" alt="java" width="20">
+              <span>Java</span>
+            </div>
+            <div class="technology springboot">
+              <img src="assets/img/stack/springboot.png" alt="springboot" width="20">
+              <span>Spring Boot</span>
+            </div>
+            <div class="technology angular">
+              <img src="assets/img/stack/angular.png" alt="angular" width="20">
+              <span>Angular</span>
+            </div>
+            <div class="technology sql">
+              <img src="assets/img/stack/MYSQL.png" alt="mysql" width="20">
+              <span>MySQL</span>
+            </div>
+            <div class="technology html">
+              <img src="assets/img/stack/HTML5.png" alt="html" width="20">
+              <span>HTML</span>
+            </div>
+            <div class="technology css">
+              <img src="assets/img/stack/CSS3.png" alt="css" width="20">
+              <span>CSS</span>
+            </div>
+            <div class="technology ts">
+              <img src="assets/img/stack/typescript.svg" alt="typescript" width="20">
+              <span>Typescript</span>
+            </div>
+            <div class="technology git">
+              <img src="assets/img/stack/git.svg" alt="git" width="20">
+              <span>git</span>
+            </div>
+          </div>
+        </div>
+        <div class="job">
+          <div class="job-card">
+            <img src="assets/img/picoop.png" alt="Logo Picoop" width="300">
+            <div class="job-card_content">
+              <p class="job-card_title">Picoop</p>
+              <div class="link-icon">
+                <a class="link" aria-label="Picoop Repo" href="https://github.com/miguelanguai/picoopSpring">
+                  <img src="assets/img/github.png" alt="link icon" width="30">
+                </a>
+              </div>
+              <p class="job-card_subtitle">Marzo 2024 - Junio 2024</p>
+              <p class="job-card_description">
+                Galería de imágenes bajo petición. Usuario pide una imagen con unas
+                características que otro usuario puede ofrecer. Desarrollado con Spring Boot en backend y Angular en
+                Frontend
+              </p>
+            </div>
+          </div>
+          <div class="job-stack">
+            <div class="technology java">
+              <img src="assets/img/stack/java.svg" alt="java" width="20">
+              <span>Java</span>
+            </div>
+            <div class="technology springboot">
+              <img src="assets/img/stack/springboot.png" alt="springboot" width="20">
+              <span>Spring Boot</span>
+            </div>
+            <div class="technology angular">
+              <img src="assets/img/stack/angular.png" alt="angular" width="20">
+              <span>Angular</span>
+            </div>
+            <div class="technology sql">
+              <img src="assets/img/stack/MYSQL.png" alt="mysql" width="20">
+              <span>MySQL</span>
+            </div>
+            <div class="technology html">
+              <img src="assets/img/stack/HTML5.png" alt="html" width="20">
+              <span>HTML</span>
+            </div>
+            <div class="technology css">
+              <img src="assets/img/stack/CSS3.png" alt="css" width="20">
+              <span>CSS</span>
+            </div>
+            <div class="technology ts">
+              <img src="assets/img/stack/typescript.svg" alt="typescript" width="20">
+              <span>Typescript</span>
+            </div>
+            <div class="technology git">
+              <img src="assets/img/stack/git.svg" alt="git" width="20">
+              <span>git</span>
+            </div>
+            <div class="technology jira">
+              <img src="assets/img/stack/jira.svg" alt="jira" width="20">
+              <span>Jira</span>
+            </div>
+          </div>
+        </div>
 
-    </article>
+        <div class="job">
 
-    <section class="stack-list">
-      <h2 id="stack">My Stack</h2>
-      <ul class="badges-list">
-        <li class="section">
-          <h3 class="section-title">Frontend</h3>
-          <ul class="badge-items">
-            <li class="badge-item">
-              <img src="assets/img/stack/HTML5.png" alt="HTML icon" class="badge-icon">
-              <span class="badge-text">HTML</span>
-            </li>
-            <li class="badge-item">
-              <img src="assets/img/stack/CSS3.png" alt="CSS icon" class="badge-icon">
-              <span class="badge-text">CSS</span>
-            </li>
-            <li class="badge-item">
-              <img src="assets/img/stack/Javascript.png" alt="JavaScript icon" class="badge-icon">
-              <span class="badge-text">JavaScript</span>
-            </li>
-            <li class="badge-item">
-              <img src="assets/img/stack/Bootstrap.png" alt="Bootstrap icon" class="badge-icon">
-              <span class="badge-text">Bootstrap</span>
-            </li>
-          </ul>
-        </li>
-        <li class="section">
-          <h3 class="section-title">Backend</h3>
-          <ul class="badge-items">
-            <li class="badge-item">
-              <img src="assets/img/stack/bash.svg" alt="Bash icon" class="badge-icon">
-              <span class="badge-text">Bash</span>
-            </li>
-            <li class="badge-item">
-              <img src="assets/img/stack/PHP.png" alt="PHP icon" class="badge-icon">
-              <span class="badge-text">PHP</span>
-            </li>
-            <li class="badge-item">
-              <img src="assets/img/stack/Laravel.png" alt="Laravel icon" class="badge-icon">
-              <span class="badge-text">Laravel</span>
-            </li>
-            <li class="badge-item">
-              <img src="assets/img/stack/java.svg" alt="JAVA icon" class="badge-icon">
-              <span class="badge-text">JAVA</span>
-            </li>
-            <li class="badge-item">
-              <img src="assets/img/stack/MYSQL.png" alt="MySQL icon" class="badge-icon">
-              <span class="badge-text">MySQL</span>
-            </li>
-            <li class="badge-item">
-              <img src="assets/img/stack/XML.png" alt="XML icon" class="badge-icon">
-              <span class="badge-text">XML</span>
-            </li>
-          </ul>
-        </li>
-        <li class="section">
-          <h3 class="section-title">Version Controlling</h3>
-          <ul class="badge-items">
-            <li class="badge-item">
-              <img src="assets/img/stack/git.svg" alt="git icon" class="badge-icon">
-              <span class="badge-text">git</span>
-            </li>
-          </ul>
-        </li>
-        <li class="section">
-          <h3 class="section-title">Deployment</h3>
-          <ul class="badge-items">
-            <li class="badge-item">
-              <img src="assets/img/stack/AWS.png" alt="AWS icon" class="badge-icon">
-              <span class="badge-text">AWS</span>
-            </li>
-            <li class="badge-item">
-              <img src="assets/img/stack/Azure.png" alt="Azure icon" class="badge-icon">
-              <span class="badge-text">Azure</span>
-            </li>
-            <li class="badge-item">
-              <img src="assets/img/stack/docker.svg" alt="Docker icon" class="badge-icon">
-              <span class="badge-text">Docker</span>
-            </li>
-            <li class="badge-item">
-              <img src="assets/img/stack/kubernetes.svg" alt="Kubernetes icon" class="badge-icon">
-              <span class="badge-text">Kubernetes</span>
-            </li>
-          </ul>
-        </li>
-      </ul>
-
-
-
-
-
+          <div class="job-card">
+            <img src="assets/img/fireSpotters.png" alt="Logo FireSpotters" width="200">
+            <div class="job-card_content">
+              <p class="job-card_title">FireSpotters</p>
+              <div class="link-icon">
+                <a class="link" aria-label="FireSpotters Web" href="https://miguelanguai.github.io/FireSpotter/">
+                  <img src="assets/img/link.svg" alt="link icon" width="30">
+                </a>
+                <a class="link" aria-label="FireSpotters Repo" href="https://github.com/miguelanguai/FireSpotter">
+                  <img src="assets/img/github.png" alt="link icon" width="30">
+                </a>
+              </div>
+              <p class="job-card_subtitle">Noviembre 2023</p>
+              <p class="job-card_description">
+                Desarrollo de una web que, con los datos atmosféricos y los incendios activos en el momento, predice el
+                movimiento de los mismos.<br>
+                Desarrollado con Javascript Vanilla.<br>
+                Ganador del certamen NASA Hackathon SpaceApps Valencia 2023.
+              </p>
+            </div>
+          </div>
+          <div class="job-stack">
+            <div class="technology html">
+              <img src="assets/img/stack/HTML5.png" alt="html" width="20">
+              <span>HTML</span>
+            </div>
+            <div class="technology css">
+              <img src="assets/img/stack/CSS3.png" alt="css" width="20">
+              <span>CSS</span>
+            </div>
+            <div class="technology js">
+              <img src="assets/img/stack/Javascript.png" alt="javascript" width="20">
+              <span>Javascript</span>
+            </div>
+            <div class="technology git">
+              <img src="assets/img/stack/git.svg" alt="git" width="20">
+              <span>git</span>
+            </div>
+            <div class="technology jira">
+              <img src="assets/img/stack/jira.svg" alt="jira" width="20">
+              <span>Jira</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <article>
-      <h2 id="works">Works</h2>
-      <div class="works-container">
-        <!--He rellenado con trabajos falsos para tener algo de "relleno"-->
-        <div class="works-box">
-          <div class="works_item">
-            <div class="works-item_title">
-              <p>
-                Creating Creations
-              </p>
-            </div>
+    <article id="about">
+      <div class="section-title">
+        <img src="assets/img/user.svg" alt="yo" width="40">
+        <h2 class="section-title">Sobre mí</h2>
+      </div>
+      <div class="about-body">
 
-            <div class="works-stack">
-              <img src="assets/img/stack/java.svg" alt="JAVA logo">
-              <img src="assets/img/stack/HTML5.png" alt="HTML logo">
-              <img src="assets/img/stack/CSS3.png" alt="CSS logo">
-            </div>
-
-          </div>
-
-          <div class="works_item">
-            <div class="works-item_title">
-              <p>
-                Inventing Invents
-              </p>
-            </div>
-
-            <div class="works-stack">
-              <img src="assets/img/stack/HTML5.png" alt="HTML logo">
-              <img src="assets/img/stack/CSS3.png" alt="CSS logo">
-              <img src="assets/img/stack/Laravel.png" alt="Laravel logo">
-              <img src="assets/img/stack/MYSQL.png" alt="MySQL logo">
-              <img src="assets/img/stack/Azure.png" alt="Azure logo">
-            </div>
-
-          </div>
-
+        <div class="about-texts">
+          <p>
+            Me llamo Miguel Ángel Guaita. Empecé a interesarme por la programación a los 16 años, pero no fue hasta
+            mucho
+            tiempo después hasta que decidí dedicarme a ello. Actualmente <strong>estoy en búsqueda activa de
+              empleo</strong>.
+          </p>
+          <p>
+            Mi mayor éxito en la programación ha sido formar parte del <strong> equipo campeón del NASA SpaceApps
+              Valencia
+              2023</strong>,
+            un hackathon en el que, mis compañeros y yo vimos que esto se nos da bien y que podemos aportar soluciones a
+            problemas reales, para ayudar y aportar a la sociedad.
+          </p>
+          <p>
+            Mi objetivo actual como programador es el de <strong>crear soluciones a problemas significativos del mundo
+              real</strong> a la vez que
+            aprendo sobre esta industria y me hago mejor profesional y mejor persona.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="assets/img/imagenPersonal.jpg" alt="este soy yo" width="250">
         </div>
       </div>
     </article>
-
-    <article>
-      <!--Future feat: When hover with CSS, explanation of every stage or hobbie
-      -->
-      <h2 id="about">About</h2>
-      <article class="education">
-        <h3>My Education</h3>
-        <p>Here is my education on the IT sector</p>
-        <div class="educationList">
-          <section>
-            <h4>Formal Education</h4>
-            <ul>
-              <li>Web Applications Development VET</li>
-            </ul>
-          </section>
-          <section>
-            <h4>Non-Formal Education</h4>
-            <ul>
-              <li>OpenWebinars Postman Course</li>
-              <li>OpenWebinars PHP Beginners Course</li>
-              <li>OpenWebinars PHP Expanding Concepts Course</li>
-              <li>OpenWebinars PHP & MySQL Creating Dynamic Sites Course</li>
-              <li>AWS Academy Cloud Foundations</li>
-            </ul>
-          </section>
-        </div>
-      </article>
-      <article>
-        <h3>I'm learning...</h3>
-        <p>Laravel</p>
-      </article>
-      <article>
-        <h3>My languages</h3>
-        <p>Besides being a native speaker in spanish and catalan, I also know
-          another languages.</p>
-        <p>Learning languages is something simple for me and a thing I always
-          like to do.</p>
-        <div class="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/img/flags/spainFlag.png" alt="Spanish Flag">
-              <div class="carousel-text">
-                <h4>Spanish</h4>
-                <p>Native Speaker</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/flags/valencianFlag.png" alt="Valencia Flag">
-              <div class="carousel-text">
-                <h4>Valencian</h4>
-                <p>Native Speaker</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/flags/englishFlag.png" alt="United Kingdom Flag">
-              <div class="carousel-text">
-                <h4>English</h4>
-                <p>B2 Level (CEFR)</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/flags/franceFlag.png" alt="French Flag">
-              <div class="carousel-text">
-                <h4>French</h4>
-                <p>A2 Level (CEFR)</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/flags/netherlandsFlag.png" alt="Netherlands Flag">
-              <div class="carousel-text">
-                <h4>Dutch</h4>
-                <p>Basic (self-taught)</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/flags/italyFlag.png" alt="Italy Flag">
-              <div class="carousel-text">
-                <h4>Italian</h4>
-                <p>Basic (self-taught)</p>
-                <p>Now learning this one!</p>
-              </div>
-            </div>
-
-          </div>
-          <button class="carousel-control prev">&#10094;</button>
-          <button class="carousel-control next">&#10095;</button>
-        </div>
-
-      </article>
-    </article>
-
-    <section>
-      <h2 id="contact">Contact</h2>
-
-      <div>
-        <h3>Github</h3>
-        <a href="https://github.com/miguelanguai"><img src="assets/img/githubIcon.png" alt="Go check my Github"
-            width="100">
-        </a>
-      </div>
-      <div>
-        <h3>LinkedIn</h3>
-        <a href="https://www.linkedin.com/in/miguelangelguaita/"><img src="assets/img/linkedinIcon.webp"
-            alt="Go check my LinkedIn" width="100"></a>
-      </div>
-      <section class="mailLink">
-        <h3>Mail</h3>
-
-        </a>
-        <p id="mailText" style="border:1px solid black;">miguelanguai@gmail.com</p>
-        <button onclick="copiarTexto()">Copiar</button>
-        <!--
-        <a href="mailto:miguelanguai@gmail.com?subject=Contact%20From%20Web%20Portfolio&body=Hi%20I%20think%20your%20website%20is%20interesting"
-          title="Send me an email"><img src="assets/img/mailToIcon.svg" alt="Send
-        me an email" width="40">
-          Esto, si está puesto, da problemas en el button para abrir el chat con
-          la pseudo-AI de abajo. No sé por qué, pero dejo aquí el codigo
-          comentado para agilizar el proceso cuando sea capaz de solucionarlo
-          -->
-      </section>
 
     </section>
   </main>
@@ -400,16 +305,19 @@
   <footer>
     <section>
       <h2>MIGUEL ÁNGEL GUAITA</h2>
-      <p>&copy; 2023 Miguel Ángel Guaita</p>
-      <p>stickers used here are made by Flaticon</p>
-      <!--
-        Following the instructions of flaticon for use of its stickers:
-      https://support.flaticon.com/s/article/Attribution-How-when-and-where-FI?language=en_US&Id=ka03V0000008Xs3QAE 
-      -->
+      <div class="license-references">
+
+        <p>&copy; 2023 Miguel Ángel Guaita</p>
+        <p>stickers used here are made by Flaticon</p>
+        <!--
+    Following the instructions of flaticon for use of its stickers:
+  https://support.flaticon.com/s/article/Attribution-How-when-and-where-FI?language=en_US&Id=ka03V0000008Xs3QAE 
+-->
+      </div>
     </section>
-    <div class="elsewhere">
+    <div class="links">
       <ul>
-        <li><b>Elsewhere</b></li>
+        
         <li><a href="https://github.com/miguelanguai">
             Github
           </a></li>
@@ -421,10 +329,8 @@
             my CV (170 kB)
           </a></li>
       </ul>
-    </div>
-    <div class="contact">
+    
       <ul>
-        <li><b>Contact</b></li>
         <li><a
             href="mailto:miguelanguai@gmail.com?subject=Contact%20From%20Web%20Portfolio&body=Hi%20I%20think%20your%20website%20is%20interesting">
             Mail
@@ -436,8 +342,6 @@
 </body>
 
 <script src="assets/scripts/chat.js"></script>
-<script src="assets/scripts/copyMail.js"></script>
-<script src="assets/scripts/idiomsCarousel.js"></script>
 <script src="assets/scripts/header.js"></script>
 
 </html>
